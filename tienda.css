@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.nav{
+    background: purple;
+    margin-bottom: 3px;
+
+}
+.nav__ul-responsive{
+    display: none;
+}
+.nav__li{
+    display: inline-block;
+    padding: 12px;
+    text-align: right;
+    color: #fff;
+}
+.nav__li i{
+
+    padding: 0px 5px;
+    text-align: right;
+
+}
+.nav__li:hover > a{
+    color: #bbb;
+}
+.nav__li:hover{
+    color: #bbb;
+}
+/*Container*/
+
+.container{
+    width: 99%;
+    margin: auto;
+}
+.showcase{
+    height: 600px;
+    width: 100%;
+    background: url(./img/infinity\ cafe.jpg) no-repeat center/cover;
+    margin-bottom: 30px;
+    
+    
+}
+
+
+/* Cards menu */
+
+.cards-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 500px;
+    flex-direction: row;
+    margin-top: 20px;
+    
+}
+.titulo-menu{
+    color: #fff;
+    text-align: center;
+    background: purple;
+    margin: 50px;
+    width: 100%;
+    margin: auto;
+}
+
+.card-img-menu{
+    height: 430px;
+   
+    width: 330px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.card-img-menu img{
+    width: 330px;
+    height: 220px;
+}
+.card-img-menu h3{
+    text-align: center;
+    display: block;
+    margin: 10px;
+}
+.card-img-menu p{
+    text-align: center;
+    font-size: 17px;
+}
+.card-img-menu .price{
+    color: slateblue;
+    margin: 20px;
+    
+}
+
+
+
+
+
+@media (max-width: 520px) {
+    .nav__ul{
+        display: none;
+    }
+    .nav__ul-responsive{
+        display: block;
+        background: purple;
+        height: 37px;
+    }
+    .nav__li-responsive{
+        padding: 12px;
+    }
+    .nav__li-responsive i{
+        color: #fff;
+        padding: 0px 5px;
+    }
+    .nav__li-container{
+        position: relative;
+        top: -1000px;
+        background-color: purple;
+        z-index: 1;
+        transition: all 1s;
+
+    }
+    .button-responsive{
+        float: right;
+        font-size: 25px;
+        padding: 7px;
+    }
+    .button-container{
+        width: 100%;
+        background: purple;
+        z-index: 100;
+        position: relative;
+    }
+    .nav__ul-responsive:hover > .nav__li-container{
+        top: 37px;
+    }
+
+}
