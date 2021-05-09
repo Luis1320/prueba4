@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+    
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    height: 430px;
+    width: 330px;
+    background: #F5F5F5;
+    text-align: center;
+    box-shadow: 3px 7px 4px rgba(0, 0, 0, .2);
+    margin: 15px;
+    
+}
+h2{
+    font-size: 18.72px;
+    background: slategray;
+    color: white;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.link-mat{
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+.link-mat:hover{
+
+    border-bottom: 2px solid #3498db;
+
+}
+
+.day-tittle{
+    background-color: slateblue;
+    color: white;
+    font-weight: bold;
+}
